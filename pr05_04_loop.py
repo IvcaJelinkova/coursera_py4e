@@ -34,3 +34,15 @@ for number in [9, 41, 12, 3, 74, 15]:
     print(str(count) + '.: SUM', str(sum) + ' <-- number ' + str(number))
 
 print('Count, SUM and average after: ' + str(count) + ', ' + str(sum) + ', ' + str(round(sum / count, 1)))     # rounding is not in example
+print('\n')
+
+
+# filtering in a loop:
+print('Before filtering number > 20: ')
+for number in [9, 41, 12, 3, 74, 15]:
+    if number > 20:
+        print('Larger number:', number)
+
+print('After')
+print('\n')
+
