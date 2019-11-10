@@ -60,3 +60,17 @@ print('After: ', found)
 print('\n')
 
 
+# finding the smallest value:
+smallest_so_far = None
+print('Before searching the smallest:', smallest_so_far)
+
+for number in [9, 41, 12, 3, 74, 15]:
+    if smallest_so_far is None:
+        smallest_so_far = number
+    elif number < smallest_so_far:
+        smallest_so_far = number
+    print('The smallest so far: ' + str(smallest_so_far) + ', actual number: ' + str(number))
+
+print('After:', smallest_so_far)
+print('\n')
+
