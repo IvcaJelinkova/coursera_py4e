@@ -53,6 +53,7 @@ print('Before searching number 3: ', found)
 for number in [9, 41, 12, 3, 74, 15]:
     if number == 3:
         found = True
+        break       # when found is True, do not need to continue searching
     print(str(found) + ', actual number: ' + str(number))
 
 print('After: ', found)
