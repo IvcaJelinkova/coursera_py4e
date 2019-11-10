@@ -46,3 +46,16 @@ for number in [9, 41, 12, 3, 74, 15]:
 print('After')
 print('\n')
 
+
+# search using a boolean variable:
+found = False
+print('Before searching number 3: ', found)
+for number in [9, 41, 12, 3, 74, 15]:
+    if number == 3:
+        found = True
+    print(str(found) + ', actual number: ' + str(number))
+
+print('After: ', found)
+print('\n')
+
+
