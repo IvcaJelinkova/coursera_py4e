@@ -3,11 +3,6 @@
 # catch it with a try/except and put out an appropriate message and ignore the number. Enter 7, 2, bob, 10, and 4
 # and match the output below.
 
-tot = 0
-for i in [5, 4, 3, 2, 1] :
-    tot = tot + 1
-print(tot)
-
 
 largest = None
 smallest = None
@@ -19,22 +14,30 @@ while True:
     try:
         num = int(num)
     except:
-        print('Invalid input')
+        print('Invalid input. Type "done" for quiting. ')
         continue
 
     if largest is None:
         largest = num
-        print('in None')
     elif num > largest:
         largest = num
-        print('actual max: ', largest)
+        # print('actual max: ', largest)
 
     if smallest is None:
         smallest = num
-        print('in small None')
     elif num < smallest:
         smallest = num
-        print('actual min: ', smallest)
+        # print('actual min: ', smallest)
 
-print("Maximum is", largest)
-print('Minimum is', smallest)
+print("Maximum is:", largest)
+print('Minimum is:', smallest)
+
+
+
+# what it prints?
+tot = 0
+for i in [5, 4, 3, 2, 1]:
+    tot = tot + 1
+    #print(i)
+    #print(tot)
+print(tot)
