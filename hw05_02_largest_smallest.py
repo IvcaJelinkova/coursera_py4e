@@ -3,6 +3,11 @@
 # catch it with a try/except and put out an appropriate message and ignore the number. Enter 7, 2, bob, 10, and 4
 # and match the output below.
 
+tot = 0
+for i in [5, 4, 3, 2, 1] :
+    tot = tot + 1
+print(tot)
+
 
 largest = None
 smallest = None
