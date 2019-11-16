@@ -8,7 +8,15 @@ text = "X-DSPAM-Confidence:    0.8475";
 end = text.find('.')
 print(end)
 
-number = float(text[end-1:])
+number = float(text[end-1 : ])
 print(number)
+
+
+# or:
+start = text.find(':')
+print(start)
+
+our_number = float(text[start+1 : ])
+print(our_number)
 #print(type(number))
 
