@@ -13,6 +13,31 @@ fhandle = open('m_box.txt')
 # print(inp[:10])
 
 # 3) searching through a file:
-for line in fhandle:
-    if line.startswith('line'):
-        print(line)                 # print printing new line also
+# for line in fhandle:
+#     line = line.rstrip()
+#     #if line.startswith('line'):
+#     #    print(line)                 # print printing new line also
+#
+#     #or:                            # stylish thing
+#     if not line.startswith('line'):
+#         continue
+#     print(line)
+
+
+# 4) using "in" to select lines:
+# for line in fhandle:
+#     line = line.rstrip()
+#     if not 'line' in line:
+#         continue
+#     print(line)
+
+
+# 5) bad file names from user:
+fname = input('Enter the file name: ')
+try:
+    fhandle = open(fname)
+except:
+    print('File cannot be opened:', fname)
+    quit()
+
+print('File is open. :-)')
