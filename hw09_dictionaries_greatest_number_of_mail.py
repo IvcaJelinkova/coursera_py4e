@@ -4,12 +4,16 @@
 # of times they appear in the file. After the dictionary is produced, the program reads through the dictionary using
 # a maximum loop to find the most prolific committer.
 
-
-fhandle = open('mbox-short.txt')
+fname = input('Enter file: ')
+if len(fname) < 1:
+    fname = 'mbox-short.txt'
+fhandle = open(fname)
 
 mails = dict()
 
 for line in fhandle:
+    line = line.rstrip()
+    #print(line)
     if line.startswith('From '):
         words = line.split()
         #print(words[1])
