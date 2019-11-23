@@ -36,3 +36,8 @@ for word, count in counts.items():
         bigcount = count
 
 print(bigword, bigcount)
+
+# get()
+stuff = dict()
+print(stuff.get('candy',-1))
+
