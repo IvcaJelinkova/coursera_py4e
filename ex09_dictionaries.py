@@ -41,3 +41,24 @@ print(bigword, bigcount)
 stuff = dict()
 print(stuff.get('candy',-1))
 
+
+# worked_exercise:
+di = dict()
+handle = open(name)
+for line in handle:
+    line = line.rstrip()
+    # print(line)
+    words = line.split()
+    # print(words)
+    for word in words:
+        print(word)
+        if word in di:
+            di[word] = di[word] + 1
+            print('**Existing**')
+        else:
+            di[word] = 1
+            print('**NEW**')
+        print(di[word])
+
+print(di)
+
