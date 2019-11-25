@@ -44,3 +44,49 @@ for line in fhandle:
         continue
     words = line.split()
     print('3. element of the line started with "From ":', words[2])
+
+
+# PyLadies: list in list
+znamky = [1, 4, 3, [1, 2, 4], 5, 1]
+print(znamky[3][1])     # how to get the second value in nested list
+
+
+
+
+for cislo_radku in range(5):
+    for cislo_sloupce in range(5):
+        print(cislo_radku * cislo_sloupce, end='\t')
+    print()
+
+cislo_radku = 1
+
+
+
+tabulka = []
+for cislo_radku in range(5):
+    radek = []
+    for cislo_sloupce in range(5):
+        radek.append(cislo_radku * cislo_sloupce)
+    tabulka.append(radek)
+
+print(tabulka[2][4])    # číslo řádku, číslo sloupce
+
+del radek
+
+# tabulka je seznam řádků
+# řádek je seznam čísel
+# tabulka je seznam seznamu čísel :-)
+
+for radek in tabulka:
+    for cislo in radek:
+        print(cislo, end='\t')
+    print()
+
+
+
+# seznam seznamů:
+pole = [['. '] * 5]
+
+
+
+
