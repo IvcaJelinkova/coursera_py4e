@@ -27,13 +27,22 @@ for line in fhandle:
     words = line.split()
     for word in words:
         counts[word] = counts.get(word, 0) + 1
+print(counts)
 
-list_counts = list()
-for word, count in counts.items():
-    new_tuple = (count, word)
-    list_counts.append(new_tuple)
+# list_counts = list()
+# for word, count in counts.items():
+#     new_tuple = (count, word)
+#     list_counts.append(new_tuple)
 
-list_counts = sorted(list_counts, reverse=True)
+# list_counts = sorted(list_counts, reverse=True)
+
+
+
+#######     OR:
+
+list_counts = sorted([(count, word) for (word, count) in counts.items()], reverse=True)        # list comprehension
+
+
 
 for count, word in list_counts[:10]:
     print(word, count)
