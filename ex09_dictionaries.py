@@ -62,3 +62,35 @@ for line in handle:
 
 print(di)
 
+# PyLadies: list of dictionaries
+zbozi = [
+    {
+        'jméno': 'kladivo',
+        'cena': 100,
+    },
+    {
+        'jméno': 'šroubek',
+        'cena': 1,
+    },
+    {
+        'jméno': 'štípačky',
+        'cena': 300,
+        'sleva': 20,
+    },
+
+]
+
+print(zbozi[2]['cena'])         # cena 3. položky
+
+#for polozka in zbozi:
+ #   print(f'{polozka['jméno']} za {polozka['cena']}')
+#...
+
+
+# http://www.mujeshop.cz/stipacky
+print(zbozi['stipacky']['cena'])
+#eshop: slovník slovníků
+
+
+
+
