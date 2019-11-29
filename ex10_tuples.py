@@ -17,7 +17,7 @@ for k, v in c.items():
 print(tmp)              # list of tuples
 
 tmp = sorted(tmp, reverse=True)
-print(tmp)
+print('tmp:', tmp)
 
 
 # top 10 most common words:
