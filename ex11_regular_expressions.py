@@ -24,6 +24,22 @@ y = re.findall('\S+@\S+', x)
 print('Mail:', y)
 
 
+# 4) fine-tuning string extracting = search form mail adress in line
+# which starts with From "
+y = re.findall('^From (\S+@\S+)', x)    # add ()
+print('Mail:', y)
+
+
+# 5) find host in mail adress:
+line = x
+y = re.findall('@([^ ]*)', line)
+print('host:', y)
+
+# OR
+
+line = x
+y = re.findall('^From .*@([^ ]*)', line)
+print('tuning host:', y)
 
 
 
