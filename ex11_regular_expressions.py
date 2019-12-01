@@ -12,9 +12,10 @@ for line in fhandle:
 print()
 
 
-# 2) print list of numbers from text:
+# 2) print list of strings from text:
 x = 'My 2 favorite number are 19 and 42. '
 y = re.findall('[0-9]+', x)
 print(y)
+
 
 
