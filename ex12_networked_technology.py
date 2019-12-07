@@ -18,3 +18,7 @@ while True:
 mysock.close()
 
 
+# using the Developer Console to Explore HTTP
+# vývojář/Inspektor webu/síť/page1 - záhlaví/
+
+
