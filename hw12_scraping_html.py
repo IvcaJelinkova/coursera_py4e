@@ -25,15 +25,13 @@ count = 0
 total = 0
 for tag in tags:
     # Look at the parts of a tag
-    print('TAG:', tag)
-    #print('Number:', tag.get('class', None))
-    print('Comments:', tag.contents[0])
+    print('\tTAG:', tag)
+    print('\t\tComments:', tag.contents[0])
     num = int(tag.contents[0])
-    #print('Attrs:', tag.attrs)
     count += 1
     total += int(tag.contents[0])
-    print(f'actual count: {count} and actual total: {total}')
-print(count)
-print(total)
+    #print(f'actual count: {count} and actual total: {total}')
+print('Count:', count)
+print('Suma:', total)
 
 
