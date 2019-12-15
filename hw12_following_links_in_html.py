@@ -24,7 +24,7 @@ ctx.verify_mode = ssl.CERT_NONE
 
 url = input('Enter URL – ')
 if len(url) < 1:
-    url = 'http://py4e-data.dr-chuck.net/known_by_Fikret.html' # Anayah
+    url = 'http://py4e-data.dr-chuck.net/known_by_Fikret.html' # Anayah (4 repeating, 3 position)
 html = urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html, 'html.parser')
 
@@ -33,15 +33,15 @@ tags = soup('a')
 user_count = int(input('Enter number of repeating: '))
 user_position = int(input('Enter position: '))
 position = 0
-for count in range(user_count-1):
+for count in range(user_count):
     for tag in tags:
-        print('TAG:', tag)
+        #print('TAG:', tag)
         #print('\tURL:', tag.get('href', None))
         url = tag.get('href', None)
         print('\tContent:', tag.contents[0])
         position += 1
         if position == user_position:
-            print('3. pozice!!! ')
+            #print('3. pozice!!! ')
             print(tag.contents[0], url)
             html = urlopen(url, context=ctx).read()
             soup = BeautifulSoup(html, 'html.parser')
@@ -50,5 +50,7 @@ for count in range(user_count-1):
             position = 0
             count += 1
             break
+
+print('The name is:', tag.contents[0])
 
 
