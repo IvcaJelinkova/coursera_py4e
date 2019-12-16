@@ -15,7 +15,7 @@ print()
 # 2) print list of strings from text:
 x = 'My 2 favorite number are 19 and 42. '
 y = re.findall('[0-9]+', x)
-print('Faforite number:', y)
+print('Favorite number:', y)
 
 
 # 3) search for mail adresses:
