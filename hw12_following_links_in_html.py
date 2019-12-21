@@ -11,6 +11,11 @@
 # Repeat this process 4 times. The answer is the last name that you retrieve.
 # Sequence of names: Fikret Montgomery Mhairade Butchi Anayah
 # Last name in sequence: Anayah
+# ex:
+    # <ul>
+    # <li style="margin-top: 4px;"><a href="http://py4e-data.dr-chuck.net/known_by_Aniqa.html">Aniqa</a></li>
+    # <li style="margin-top: 19px;"><a href="http://py4e-data.dr-chuck.net/known_by_Ogheneruno.html">Ogheneruno</a></li>
+    # <li style="margin-top: 19px;"><a href="http://py4e-data.dr-chuck.net/known_by_Montgomery.html">Montgomery</a></li>
 
 
 from urllib.request import urlopen
