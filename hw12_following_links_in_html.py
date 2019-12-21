@@ -38,7 +38,7 @@ for count in range(user_count):
         #print('TAG:', tag)
         #print('\tURL:', tag.get('href', None))
         url = tag.get('href', None)
-        print('\tContent:', tag.contents[0])
+#        print('\tContent:', tag.contents[0])
         position += 1
         if position == user_position:
             #print('3. pozice!!! ')
@@ -46,7 +46,7 @@ for count in range(user_count):
             html = urlopen(url, context=ctx).read()
             soup = BeautifulSoup(html, 'html.parser')
             tags = soup('a')
-            print(position, count+1)
+#            print(position, count+1)
             position = 0
             count += 1
             break
