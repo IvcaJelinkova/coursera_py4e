@@ -26,6 +26,8 @@ while True:
         print(data)
         continue
 
+    print(json.dumps(js, indent=4))
+
     lat = js['results'][0]['geometry']['location']['lat']   # walking down the tree
     lng = js['results'][0]['geometry']['location']['lng']
     print('lat', lat, 'lng', lng)
