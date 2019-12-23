@@ -34,7 +34,8 @@ input = '''[
     }
 ]'''
 
-info = json.loads(input)
+info = json.loads(input)    # list
+print(info, '\n')
 print('User count:', len(info))
 for item in info:
     print('Name', item['name'])
