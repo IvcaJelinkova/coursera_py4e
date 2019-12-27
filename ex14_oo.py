@@ -21,29 +21,28 @@ print(type(l))
 d = dict()
 print(type(d))
 #print(dir(d))
+print()
 
 
 # 2) first class
 class PartyAnimal:
     x = 0
+    name = ''
 
-    def __init__(self):
-        print('I am constructed')
+    def __init__(self, z):
+        self.name = z
+        print(self.name, 'constructed')
 
     def party(self):
         self.x = self.x + 1
-        print('So far', self.x)
+        print(self.name, 'party count', self.x)
 
     def __del__(self):
-        print('I am destructed', self.x)
+        print('I am destructed', self.name)
 
-an = PartyAnimal()
+s = PartyAnimal('Sally')
+s.party()
 
-an.party()
-an.party()
-an.party()
-an = 42
-print('an contains', an)
-
-print(type(an))
-#print(dir(an))
+j = PartyAnimal('Jim')
+j.party()
+s.party()
