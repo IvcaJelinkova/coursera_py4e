@@ -43,6 +43,6 @@ class PartyAnimal:
 s = PartyAnimal('Sally')
 s.party()
 
-j = PartyAnimal('Jim')
+j = PartyAnimal('Jim')  # second independent instance
 j.party()
 s.party()
