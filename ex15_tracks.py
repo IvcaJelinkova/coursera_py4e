@@ -50,14 +50,10 @@ def lookup(d, key):
     found = False
     for child in d:
         if found:
-            print('Jsem v if found')
-            print('child.text je:', child.text)
             return child.text
         if child.tag == 'key' and child.text == key:
-            print('jsem v if child, found je True =', child.text)
             found = True
             continue
-        print(child.text, 'nesedí')
     return None
 
 
@@ -68,7 +64,6 @@ print('Dict count:', len(all))
 for entry in all:
     print('\n\nzpracovávám entry')
     if ( lookup(entry, 'Track ID') is None ):
-        print('track id is none')
         continue
     name = lookup(entry, 'Name')
     artist = lookup(entry, 'Artist')
@@ -78,7 +73,6 @@ for entry in all:
     length = lookup(entry, 'Total Time')
 
     if name is None or artist is None or album is None:
-        print('jsem v None')
         continue
 
     print(name, artist, album, count, year, length)
