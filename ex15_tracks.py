@@ -49,7 +49,9 @@ if len(fname) < 1:
 def lookup(d, key):
     found = False
     for child in d:
+        print('child =', child, 'in d =', d)
         if found:
+            print('child.text = ', child.text)
             return child.text
         if child.tag == 'key' and child.text == key:
             found = True

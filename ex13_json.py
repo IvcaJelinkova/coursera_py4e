@@ -16,7 +16,7 @@ data = '''{
 }'''
 
 info = json.loads(data)
-print('Name:', info["name"])    # Chuck
+print('Name:', info["name"])            # Chuck
 print('Hide:', info["email"]["hide"])   # yes
 print()
 
@@ -34,10 +34,10 @@ input = '''[
     }
 ]'''
 
-info = json.loads(input)    # list
+info = json.loads(input)                # list
 print(info, '\n')
-print('User count:', len(info))
+print('User count:', len(info))         # User count: 2
 for item in info:
-    print('Name', item['name'])
-    print('Id', item['id'])
-    print('Attribute', item['x'])
+    print('Name', item['name'])         # Name Chuck; Name Ivca (in next for cycle... )
+    print('Id', item['id'])             # Id 001
+    print('Attribute', item['x'])       # Attribute 2

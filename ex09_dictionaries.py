@@ -3,19 +3,21 @@
 jjj = {'chuck': 1, 'fred': 42, 'jan': 100}
 print(jjj)
 
-print('fred' in jjj)        # --> True
+print('fred' in jjj)            # --> True
 
 # simplified counting with get()
 counts = dict()
 names = ['csev', 'cwen', 'csev', 'zqian', 'cwen']
 for name in names:
     counts[name] = counts.get(name, 0) + 1
-print(counts)
+print(counts)                   # {'csev': 2, 'cwen': 2, 'zqian': 1}
 
 
 # two iteration
 for name, number in counts.items():
-    print(name, number)
+    print(name, number)         # csev 2
+                                # cwen 2
+                                # zqian 1
 
 
 #  bigword + counts
@@ -26,7 +28,7 @@ counts = dict()
 for line in fhandle:
     words = line.split()
     for word in words:
-        counts[word] = counts.get(word, 0) + 1
+        counts[word] = counts.get(word, 0) + 1      # increase the count of the word
 
 bigcount = None
 bigword = None
@@ -51,14 +53,14 @@ for line in handle:
     words = line.split()
     # print(words)
     for word in words:
-        print(word)
+        #print(word)
         if word in di:
             di[word] = di[word] + 1
-            print('**Existing**')
+            #print('**Existing**')
         else:
             di[word] = 1
-            print('**NEW**')
-        print(di[word])
+            #print('**NEW**')
+        #print(di[word])
 
 print(di)
 
@@ -80,7 +82,7 @@ zbozi = [
 
 ]
 
-print(zbozi[2]['cena'])         # cena 3. položky
+print(zbozi[2]['cena'])         # cena 3. položky = 300
 
 #for polozka in zbozi:
  #   print(f'{polozka['jméno']} za {polozka['cena']}')
@@ -88,7 +90,7 @@ print(zbozi[2]['cena'])         # cena 3. položky
 
 
 # http://www.mujeshop.cz/stipacky
-print(zbozi['stipacky']['cena'])
+#print(zbozi['stipacky']['cena'])
 #eshop: slovník slovníků
 
 

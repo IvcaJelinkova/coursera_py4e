@@ -19,6 +19,7 @@ print()
 
 
 # 2. example:
+
 input = '''<stuff>
     <users>
         <user x="2">
@@ -31,7 +32,6 @@ input = '''<stuff>
         </user>
     </users>
 </stuff>'''
-
 stuff = ET.fromstring(input)
 lst = stuff.findall('users/user')
 print('User count:', len(lst))
